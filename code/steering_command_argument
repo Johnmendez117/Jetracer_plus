@@ -1,0 +1,17 @@
+# steering_command
+# Auther: John Mendez 
+
+from jetracer.nvidia_racecar import NvidiaRacecar
+
+import argparse
+
+car = NvidiaRacecar()
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument('--value', type=float, required=True)
+
+args = parser.pars_args()
+car.steering = args.value
+
+print=("The command servo is: ", args.value)
