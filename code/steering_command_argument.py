@@ -12,7 +12,7 @@ parser = argparse.ArgumentParser()
 # we are parcing the imput of the user
 parser.add_argument('--value', type=float, required=True)
 # we are commanding the car to change steering 
-args = parser.pares_args()
+args = parser.parse_args()
 car.steering = args.value
 
 print=("The command servo is: ", args.value)
