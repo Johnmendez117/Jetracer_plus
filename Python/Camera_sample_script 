@@ -27,7 +27,7 @@ image_path = os.path.join(directory, 'sample_image_' + uuid + '.jpeg')
 with open(image_path, 'wb') as f:
     f.write(image)
 
- print('New File Created: \n')
+print('New File Created: \n')
 print(image_path)
 
 # shut cown camera and release resources 
