@@ -21,8 +21,7 @@ image = bgr8_jpeg(mage)
 #creat uniqe file name
 uuid = '%s' % (uuid())
 directory = os.getcwd();
-image_path = os.path.join(directory, 'sample_image_' + uuid '.jpeg')
-
+image_path = os.path.join(directory, 'sample_image_' + uuid + '.jpeg')
 
 # saving the image to file 
 with open(image_path, 'wb') as f:
