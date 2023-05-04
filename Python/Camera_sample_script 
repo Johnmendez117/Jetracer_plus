@@ -3,10 +3,10 @@
 # About:
 # learning how to use the jetcam
 # importing required libraries
-import os,time 
+import os, time 
 from uuid import uuid1  # this file is used to generate uniqe names for files
 from jetcam.csi_camera import CSICamera 
-from jetcam.utils import bgr8_to_jpeg
+from jetcam.utils import bgr8_to_jpg
 
 
 # employing object orientated programming
@@ -15,13 +15,13 @@ camer = CSICamera(width=224, hieght=224)
 time.sleep(5)
 
 image = camera.read()
-image = bgr8_jpeg(mage)
+image = bgr8_jpg(mage)
 
 
 #creat uniqe file name
 uuid = '%s' % (uuid())
 directory = os.getcwd();
-image_path = os.path.join(directory, 'sample_image_' + uuid + '.jpeg')
+image_path = os.path.join(directory, 'sample_image_' + uuid + '.jpg')
 
 # saving the image to file 
 with open(image_path, 'wb') as f:
